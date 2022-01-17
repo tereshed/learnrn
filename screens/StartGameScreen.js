@@ -46,7 +46,7 @@ const StartGameScreen = props => {
                 </NumberContainer>
                 <Button
                     title='START GAME' 
-                    onPress={() => {}}
+                    onPress={() => props.onStatrGame(selectedNumber)}
                 />
             </Card>
         )
@@ -117,7 +117,8 @@ const styles = StyleSheet.create({
     },
     titleScreen: {
         fontSize: 20,
-        marginVertical: 10
+        marginVertical: 10,
+        fontFamily: 'open-sans-bold',
     },
     input: {
         width: 50,
